@@ -1,0 +1,1 @@
+query home assistant and show states
