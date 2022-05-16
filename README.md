@@ -1,6 +1,6 @@
 # Home assistant dashboard for Roku!
 
-Roku's display API sucks, so this works instead of the a lovelace dashboard.
+Roku's display API sucks, so this works instead of a nice lovelace dashboard.
 
 # usage
 
