@@ -1,0 +1,37 @@
+{
+    "token": "HA_BEARER_TOKEN",
+    "host": "http://URL_FOR_YOUR_HOME_ASSISTANT:HOME_ASSISTANT_PORT",
+    "refresh_rate": "60",
+    "entities": {
+        "People": [
+            "person.a",
+            "person.b",
+            "person.c",
+            "person.d"
+        ],
+        "Toilet": [
+            "sensor.toilet_status"
+        ],
+        "Internet": [
+            "sensor.speedtest_download"
+        ]
+    },
+    "services": {
+        "Lights": {
+            "Room Lights Toggle": {
+                "endpoint": "light/toggle",
+                "payload": {
+                    "entity_id": "light.room_lights"
+                }
+            },
+            "Day Lights": {
+                "endpoint": "script/day_lights",
+                "payload": {}
+            },
+            "Sleep Lights": {
+                "endpoint": "script/sleep_lights",
+                "payload": {}
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@ sub Main()
 	screen = CreateObject("roSGScreen")
 	port = CreateObject("roMessagePort")
 	screen.setMessagePort(m.port)
-	scene = screen.CreateScene("TestScene")
+	scene = screen.CreateScene("Dashboard")
 	screen.show()
 	scene.setFocus(true)
 

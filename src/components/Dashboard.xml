@@ -1,0 +1,32 @@
+<?rokuml version="1.0" encoding="utf-8" ?>
+
+<component name="Dashboard" extends="Scene" initialFocus = "serviceListContent" >
+
+<children>
+	<Label id="statusinfo" translation="[50,50]" font="font:LargeBoldSystemFont" text="Current entity statuses" />
+    <LayoutGroup
+        id = "statusListContent"
+        layoutDirection = "vert"
+        translation = "[ 50, 100 ]"
+        itemSpacings = "[ 0, 20 ]"
+    >
+    </LayoutGroup>
+
+	<Label id="serviceinfo" translation="[700,50]" font="font:LargeBoldSystemFont" text="Service commands" />
+    <ButtonGroup
+        id = "serviceListContent"
+        layoutDirection = "vert"
+        translation = "[ 700, 100 ]"
+        itemSpacings = "[ 0, 0 ]"
+    >
+    </ButtonGroup>
+
+    <Timer
+        id="refreshTimer"
+        repeat="true"
+     /> <!-- duration gets set by config -->
+</children>
+
+<script type="text/brightscript" uri="pkg://components/Dashboard.brs"/>
+
+</component>
